@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and { min width: 768px } {
+    .presentacion {
+        flex-direction: row;
+    }
+
+}
+body {
+    background-color: white;
+    color: black;
+    min-height: 100vh; /* asegura que ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column; /* header arriba, footer abajo */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #007bff;
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "krona one", sans-serif;
+}
+
+.presentacion {
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* se adapta en pantallas pequeñas */
+}
+
+.presentacion__contenido {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.presentacion__contenido__logo {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: "krona one", sans-serif;
+    text-align: center;
+}
+
+.presentacion__contenido__texto {
+    font-size: 24px;
+    font-family: "Monserrat", sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+.modal__login {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Monserrat", sans-serif;
+}
+
+.form-text.text-muted {
+    font-size: 14px;
+    font-family: "Monserrat", sans-serif;
+    color: #777;
+    margin-top: 4px;
+}
+
+.form-group.form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-check-input {
+    margin-right: 8px;
+}
+
+.form-check-label {
+    font-size: 15px;
+    font-family: "Monserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Monserrat", sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #df9112;
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "krona one", sans-serif;
+}
