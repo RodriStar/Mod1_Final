@@ -4,19 +4,14 @@
     box-sizing: border-box;
 }
 
-@media screen and { min width: 768px } {
-    .presentacion {
-        flex-direction: row;
-    }
 
-}
 body {
     background-color: white;
     color: black;
     min-height: 100vh; /* asegura que ocupe toda la pantalla */
     display: flex;
     flex-direction: column; /* header arriba, footer abajo */
-    height: 100vh;
+    /*height: 100vh;*/
     box-sizing: border-box;
 }
 
@@ -36,6 +31,13 @@ header {
     gap: 40px;
     flex-wrap: wrap; /* se adapta en pantallas pequeñas */
 }
+
+@media screen and (min-width: 768px) {
+    .presentacion {
+        flex-direction: row;
+    }
+}
+
 
 .presentacion__contenido {
     max-width: 600px;
@@ -59,7 +61,7 @@ header {
 
 .presentacion__contenido__texto {
     font-size: 24px;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     text-align: center;
 }
@@ -85,12 +87,12 @@ header {
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 16px;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .form-text.text-muted {
     font-size: 14px;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #777;
     margin-top: 4px;
 }
@@ -107,7 +109,7 @@ header {
 
 .form-check-label {
     font-size: 15px;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -118,7 +120,7 @@ header {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 18px;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease;
@@ -128,10 +130,30 @@ header {
     background-color: #0056b3;
 }
 
+/* Aplicando BEM sólo al footer a modo de ejemplo */
+
 .footer {
     background-color: #df9112;
     padding: 24px;
     text-align: center;
+}
+
+.footer__texto {
     font-size: 18px;
-    font-family: "krona one", sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.footer__link {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer__link:hover {
+    color: #003d80;
+    text-decoration: underline;
 }
